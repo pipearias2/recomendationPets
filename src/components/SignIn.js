@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import {useHistory} from 'react-router-dom';
 
 function Copyright() {
   return (
@@ -46,8 +47,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
 export default function SignIn() {
   const classes = useStyles();
+  const history = useHistory();
+  const handleOnClick = useCallback(() => history.push('/registry'), [history]);
 
   return (
     <Container component="main" maxWidth="xs">
@@ -82,10 +86,6 @@ export default function SignIn() {
             id="password"
             autoComplete="current-password"
           />
-          <FormControlLabel
-            control={<Checkbox value="remember" color="primary" />}
-            label="Recordarme"
-          />
           <Button
             type="submit"
             fullWidth
@@ -103,7 +103,7 @@ export default function SignIn() {
               
             </Grid>
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link href="#" variant="body2" onClick={handleOnClick}>
                 {"No tienes cuenta? Registrate"}
               </Link>
             </Grid>
