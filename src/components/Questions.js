@@ -111,11 +111,11 @@ function FormQuestions(props){
                         onChange={handleChangeSizePet}
                         required
                       >
-                        <FormControlLabel value="5" control={<Radio />} label="Muy grande" />
-                        <FormControlLabel value="4" control={<Radio />} label="Grande" />
-                        <FormControlLabel value="3" control={<Radio />} label="Mediano" />
-                        <FormControlLabel value="2" control={<Radio />} label="Pequeño" />
-                        <FormControlLabel value="1" control={<Radio />} label="Muy Pequeño" />
+                        <FormControlLabel value="500" control={<Radio />} label="Muy grande" />
+                        <FormControlLabel value="400" control={<Radio />} label="Grande" />
+                        <FormControlLabel value="300" control={<Radio />} label="Mediano" />
+                        <FormControlLabel value="200" control={<Radio />} label="Pequeño" />
+                        <FormControlLabel value="100" control={<Radio />} label="Muy Pequeño" />
                       </RadioGroup>
                     </FormControl>
 
@@ -128,11 +128,11 @@ function FormQuestions(props){
                         onChange={handleChangeColorPet}
                         required
                         >
-                        <FormControlLabel value="1" control={<Radio />} label="Tricolor" />
-                        <FormControlLabel value="2" control={<Radio />} label="Cafe" />
-                        <FormControlLabel value="3" control={<Radio />} label="Blanco" />
-                        <FormControlLabel value="4" control={<Radio />} label="Negro" />
-                        <FormControlLabel value="5" control={<Radio />} label="Cualquiera" />
+                        <FormControlLabel value="100" control={<Radio />} label="Tricolor" />
+                        <FormControlLabel value="200" control={<Radio />} label="Cafe" />
+                        <FormControlLabel value="300" control={<Radio />} label="Blanco" />
+                        <FormControlLabel value="400" control={<Radio />} label="Negro" />
+                        <FormControlLabel value="500" control={<Radio />} label="Cualquiera" />
                       </RadioGroup>
                     </FormControl>
 

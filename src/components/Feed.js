@@ -12,7 +12,7 @@ import CardActions from '@material-ui/core/CardActions';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-
+import _ from 'lodash';
 
 import axios from 'axios';
 
@@ -40,7 +40,7 @@ class Feed extends React.Component{
     axios.get(`http://localhost:1337/api/client/pets-by-clients`)
     .then(res => {
       if(res.status == 200){
-        this.setState({pets: res.data});
+        this.setState({pets: _.orderBy(res.data, ['index'], ['desc'])});
       }else
         console.log('ups');
     });

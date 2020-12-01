@@ -16,15 +16,15 @@ export default function CardPet(props){
         return '$' + num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
     }
     function getColor(colorCode){
-        if (colorCode==1){
+        if (colorCode==100){
             return "Tricolor"
-        }else if(colorCode==2){
+        }else if(colorCode==200){
             return "Cafe";
-        }else if(colorCode==3){
+        }else if(colorCode==300){
             return "Blanco";
-        }else if(colorCode==4){
+        }else if(colorCode==400){
             return "Negro";
-        }else if(colorCode==5){
+        }else if(colorCode==500){
             return "Cualquiera";
         }
     }
