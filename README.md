@@ -1,3 +1,6 @@
+Al iniciar la aplicación se deben dirigir a la URL http://localhost:3000/questions
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
