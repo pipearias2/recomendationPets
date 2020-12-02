@@ -17,14 +17,27 @@ export default function CardPet(props){
     }
     function getColor(colorCode){
         if (colorCode==100){
-            return "Tricolor"
+            return "Muy Pequeño"
         }else if(colorCode==200){
-            return "Cafe";
+            return "Pequeño";
         }else if(colorCode==300){
-            return "Blanco";
+            return "Mediano";
         }else if(colorCode==400){
-            return "Negro";
+            return "Grande";
         }else if(colorCode==500){
+            return "Muy grande";
+        }
+    }
+    function getSize(sizeCode){
+        if (sizeCode==100){
+            return "Tricolor"
+        }else if(sizeCode==200){
+            return "Cafe";
+        }else if(sizeCode==300){
+            return "Blanco";
+        }else if(sizeCode==400){
+            return "Negro";
+        }else if(sizeCode==500){
             return "Cualquiera";
         }
     }
@@ -55,6 +68,7 @@ export default function CardPet(props){
                    <b> Area :</b>{props.pet.area} <br></br>
                    <b> Precio :</b> {currencyFormat(props.pet.price)}<br></br>
                    <b> Color: </b> {getColor(props.pet.color)}<br></br>
+                   <b> Tamaño: </b>{ getSize(props.pet.size)}<br></br>
                 </Typography>
                 </CardContent>
                 <CardActions disableSpacing>
