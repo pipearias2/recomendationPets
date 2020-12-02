@@ -15,29 +15,29 @@ export default function CardPet(props){
     function currencyFormat(num) {
         return '$' + num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
     }
-    function getColor(colorCode){
-        if (colorCode==100){
+    function getSize(sizeCode){
+        if (sizeCode==100){
             return "Muy Pequeño"
-        }else if(colorCode==200){
+        }else if(sizeCode==200){
             return "Pequeño";
-        }else if(colorCode==300){
+        }else if(sizeCode==300){
             return "Mediano";
-        }else if(colorCode==400){
+        }else if(sizeCode==400){
             return "Grande";
-        }else if(colorCode==500){
+        }else if(sizeCode==500){
             return "Muy grande";
         }
     }
-    function getSize(sizeCode){
-        if (sizeCode==500){
+    function getColor(colorCode){
+        if (colorCode==500){
             return "Tricolor"
-        }else if(sizeCode==400){
+        }else if(colorCode==400){
             return "Blanco";
-        }else if(sizeCode==300){
+        }else if(colorCode==300){
             return "Café";
-        }else if(sizeCode==200){
+        }else if(colorCode==200){
             return "Negro";
-        }else if(sizeCode==100){
+        }else if(colorCode==100){
             return "Cualquiera";
         }
     }
