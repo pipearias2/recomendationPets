@@ -29,15 +29,15 @@ export default function CardPet(props){
         }
     }
     function getSize(sizeCode){
-        if (sizeCode==100){
+        if (sizeCode==500){
             return "Tricolor"
-        }else if(sizeCode==200){
+        }else if(sizeCode==400){
             return "Cafe";
         }else if(sizeCode==300){
             return "Blanco";
-        }else if(sizeCode==400){
+        }else if(sizeCode==200){
             return "Negro";
-        }else if(sizeCode==500){
+        }else if(sizeCode==100){
             return "Cualquiera";
         }
     }

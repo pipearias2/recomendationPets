@@ -128,11 +128,11 @@ function FormQuestions(props){
                         onChange={handleChangeColorPet}
                         required
                         >
-                        <FormControlLabel value="100" control={<Radio />} label="Tricolor" />
-                        <FormControlLabel value="200" control={<Radio />} label="Cafe" />
+                        <FormControlLabel value="500" control={<Radio />} label="Tricolor" />
+                        <FormControlLabel value="400" control={<Radio />} label="Cafe" />
                         <FormControlLabel value="300" control={<Radio />} label="Blanco" />
-                        <FormControlLabel value="400" control={<Radio />} label="Negro" />
-                        <FormControlLabel value="500" control={<Radio />} label="Cualquiera" />
+                        <FormControlLabel value="200" control={<Radio />} label="Negro" />
+                        <FormControlLabel value="100" control={<Radio />} label="Cualquiera" />
                       </RadioGroup>
                     </FormControl>
 
